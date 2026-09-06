@@ -1,0 +1,15 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/**
+ * ARCHIVO: schema.prisma
+ * PROPÓSITO: Definir las tablas (Modelos) de la base de datos y sus relaciones.
+ * Prisma leerá este archivo para crear las tablas en PostgreSQL 
+ * y generar los tipos de TypeScript.
+ */
